@@ -9,7 +9,7 @@ import Photo from '../Photos/Photo';
 export default function Carousel(props: any) {
     const [top, setTop] = useState(asyncPhoto);
 
-    const changeImage = (source: any) => {
+    const changeImage = (source: string) => {
         setTop(source);
     }
 
