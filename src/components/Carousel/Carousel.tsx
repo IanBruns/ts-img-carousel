@@ -20,6 +20,8 @@ export default function Carousel(props: any) {
     return (
         <React.Fragment>
             <h2>Carousel</h2>
+            <img src={top} alt='' height='200' width='200' />
+            <br />
             {lowerImg}
         </React.Fragment>
     )
