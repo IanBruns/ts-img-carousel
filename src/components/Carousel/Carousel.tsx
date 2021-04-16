@@ -9,8 +9,13 @@ import Photo from '../Photos/Photo';
 export default function Carousel(props: any) {
     const [top, setTop] = useState(asyncPhoto);
 
+    const changeImage = (source: any) => {
+        setTop(source);
+    }
+
     const photoArr = [asyncPhoto, belle, ps5, taako, thenPhoto];
-    const lowerImg = photoArr.map(photo => <Photo source={photo} />)
+    const lowerImg = photoArr.map(photo => <Photo source={photo}
+        changeImage={changeImage} />)
 
     return (
         <React.Fragment>
