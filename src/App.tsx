@@ -1,4 +1,5 @@
 import './App.css';
+import Carousel from './components/Carousel/Carousel';
 
 function App() {
   return (
@@ -7,7 +8,7 @@ function App() {
         <h2>Images</h2>
       </header>
       <body>
-
+        <Carousel />
       </body>
     </div>
   );
