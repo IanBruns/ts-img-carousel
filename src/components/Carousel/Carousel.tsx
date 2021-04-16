@@ -7,7 +7,7 @@ import thenPhoto from '../../images/thenScreenShot.png';
 import Photo from '../Photos/Photo';
 
 export default function Carousel(props: any) {
-    const [num, setNum] = useState(0);
+    const [top, setTop] = useState(asyncPhoto);
 
     const photoArr = [asyncPhoto, belle, ps5, taako, thenPhoto];
     const lowerImg = photoArr.map(photo => <Photo source={photo} />)
